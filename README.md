@@ -1,115 +1,95 @@
-LangGraph + Groq API Example
+# LangGraph + Groq API Example
 
-This project demonstrates how to build a simple AI workflow using LangGraph and Groq API.
-It shows how graph-based orchestration can be used to manage multi-step reasoning with Large Language Models (LLMs).
+This project shows how to build a simple AI workflow using LangGraph and Groq API.
+It demonstrates how graph-based workflows can manage multi-step reasoning with LLMs.
 
-Instead of a traditional prompt → response pipeline, this project uses LangGraph to structure AI operations into a workflow consisting of nodes and edges.
+---
 
-Technologies Used
+## Features
 
-Python
+* Graph-based AI workflow
+* Uses LangGraph with LangChain
+* Integrates Groq API
+* Supports multi-step reasoning
+* Simple and easy to understand
 
-LangGraph
+---
 
-LangChain
+## Tech Stack
 
-Groq API
+* Python
+* LangGraph
+* LangChain
+* Groq API
+* Jupyter Notebook
 
-Jupyter Notebook
+---
 
-📂 Project Structure
-project/
-│
-├── langgraph_groq_api.ipynb   # Main notebook
-├── README.md                  # Project documentation
-└── requirements.txt           # Dependencies
-⚙️ How It Works
+## Project Structure
 
-The notebook demonstrates how to create an AI workflow using LangGraph.
+* langgraph_groq_api.ipynb
+* requirements.txt
+* README.md
 
-Core Concepts Used
+---
 
-1️⃣ State
+## How It Works
 
-State stores the information shared between nodes.
+The workflow is built using three main concepts:
 
+**State**
+Stores shared data between steps
 Example:
-
 state = {
-    "question": "...",
-    "answer": ""
+"question": "...",
+"answer": ""
 }
 
-2️⃣ Nodes
+**Nodes**
+Each node performs a task like processing input or generating a response
 
-Nodes represent individual processing steps.
+**Edges**
+Control the flow between nodes
 
-Example tasks:
+---
 
-LLM reasoning
+## Workflow
 
-Query processing
+User Input → Process Query → Generate Response → Output
 
-Response generation
+---
 
-3️⃣ Edges
+## Installation
 
-Edges define the workflow and control the movement between nodes.
+Clone the repository:
 
-Example workflow:
-
-User Input
-     ↓
-LLM Processing
-     ↓
-Generate Response
-🧪 Example Workflow
-
-The LangGraph pipeline works like this:
-
-User Question
-      ↓
-Process Query
-      ↓
-Generate Response
-      ↓
-Return Output
-
-This approach allows the system to support multi-step reasoning and structured AI pipelines.
-
-▶️ How to Run
-1️⃣ Clone the repository
 git clone https://github.com/yourusername/langgraph-groq-demo.git
-2️⃣ Install dependencies
+
+Go to the folder:
+
+cd langgraph-groq-demo
+
+Install dependencies:
+
 pip install -r requirements.txt
-3️⃣ Run the notebook
+
+---
+
+## Usage
+
+Run the notebook:
+
 jupyter notebook
 
 Open:
 
 langgraph_groq_api.ipynb
-💡 Key Learning
 
-This project demonstrates:
+---
 
-Graph-based AI workflows
+## Key Learning
 
-LangGraph fundamentals
-
-Multi-step reasoning with LLMs
-
-Integrating Groq API with LangChain
-
-🔮 Future Improvements
-
-Add RAG pipeline
-
-Add document upload support
-
-Build a Streamlit interface
-
-Add memory-based conversation
-
-👨‍💻 Author
-
-Prashanth Chowdary
+* Graph-based AI workflows
+* LangGraph basics
+* Multi-step reasoning
+* Using Groq API with LangChain
